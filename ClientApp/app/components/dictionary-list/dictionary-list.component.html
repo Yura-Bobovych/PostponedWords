@@ -1,0 +1,8 @@
+<h1>dictionaly-list</h1>
+<div class="dict-item" *ngFor="let dict of Dictionaries">
+	{{dict.dictionaryName}}
+</div>
+<form (ngSubmit)="onSubmit(form_data)" #form_data="ngForm">
+	<input type="text" name="search_text" ngModel />
+	<input type="submit" value="add dictionary" />
+</form>

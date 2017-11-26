@@ -1,0 +1,2 @@
+<div id="googleBtn" [hidden]="!!localStorageService.authToken">sign in</div>
+<div id="logOut" *ngIf="!!localStorageService.authToken"  (click)="LogOut()">log out</div>

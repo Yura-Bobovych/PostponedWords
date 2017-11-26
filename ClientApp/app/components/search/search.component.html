@@ -1,0 +1,11 @@
+<p>
+	search works!
+</p>
+<div>
+	<form (ngSubmit)="onSubmit(form_data)" #form_data="ngForm">
+		<input type="text" name="search_text" ngModel />
+		<input type="submit" value="search" />
+	</form>
+	<search-word *ngFor="let word of searchWord" [word]="word"></search-word>	 
+	
+</div>
